@@ -1,0 +1,92 @@
+/*Navbar*/
+nav#navbar{
+  height: 52px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+  background-color: white;
+}
+
+button.btnMenu{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(255, 0, 0, 0.25);
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Oxanium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+button.btnMenu:hover{
+  box-shadow: 0px 4px 4px rgba(255, 0, 0, 0.84);
+}
+
+button#btnHome{
+  position: absolute;
+  width: 131px;
+  height: 28px;
+  left: 17px;
+  top: 10px;
+}
+
+button#btnStar{
+  position: absolute;
+  width: 131px;
+  height: 28px;
+  left: 165px;
+  top: 10px;
+}
+
+button#btnAccount{
+  position: absolute;
+  width: 116px;
+  height: 28px;
+  right: 218px;
+  top: 12px;
+}
+
+button#btnLogin{
+  position: absolute;
+  width: 188px;
+  height: 28px;
+  right: 17px;
+  top: 12px;
+}
+
+div#compOne{
+  position: absolute;
+  width: 258px;
+  left: calc(50% - 258px/2);
+  top: 0%;
+  bottom: 0%;
+}
+
+div#logo{
+  position: absolute;
+  left: 0%;
+  right: 61.63%;
+  top: 0%;
+  bottom: 5.77%;
+
+  background-image: url("/assets/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div#title{
+  position: absolute;
+  left: 26.74%;
+  right: 0%;
+  top: 36.54%;
+  bottom: 0%;
+
+  background: url("/assets/title.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,348 @@
+/*Back*/
+div#back {
+  height: 350px;
+
+  background: url("/assets/background.jpg");
+  background-position: top -200px right 0px;
+  background-repeat: no-repeat;
+}
+div#filterBack{
+  position: absolute;
+  width: 638px;
+  height: 219px;
+  left: calc(50% - 638px/2 - 1px);
+  top: 160px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+p#titleFilter{
+  position: absolute;
+  width: 159px;
+  height: 22px;
+  left: 21px;
+  top: 10px;
+
+  font-family: Oxygen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.8182px;
+  line-height: 22px;
+
+  color: #000000;
+}
+
+select.selectFilter{
+  background: #D3D3D3;
+  box-shadow: 0px 5.09091px 5.09091px rgba(255, 0, 0, 0.25);
+  border: none;
+  border-radius: 3.81818px;
+}
+
+select.selectFilter:hover{
+  box-shadow: 0px 4px 4px rgba(255, 0, 0, 0.84);
+}
+
+select#marqueSelect{
+  position: absolute;
+  height: 36px;
+  left: 3.29%;
+  right: 71%;
+  top: 43px;
+}
+
+select#modeleSelect{
+  position: absolute;
+  height: 36px;
+  left: 37.15%;
+  right: 37.15%;
+  top: 43px;
+}
+
+select#carburantSelect{
+  position: absolute;
+  height: 36px;
+  left: 71%;
+  right: 3.29%;
+  top: 43px;
+}
+
+div.sideClass{
+  top: 100px;
+}
+
+div#prixDiv{
+  position: absolute;
+  width: 130px;
+  height: 20.63px;
+  left: 38px;
+}
+
+div#kiloDiv{
+  position: absolute;
+  width: 130px;
+  height: 20.63px;
+  left: 254px;
+}
+
+div#dateDiv{
+  position: absolute;
+  width: 130px;
+  height: 20.63px;
+  left: 470px;
+}
+
+button#valideFilter{
+
+  position: absolute;
+  width: 228px;
+  height: 41px;
+  left: calc(50% - 228px/2);
+  top: 163px;
+
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Oxanium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  background: #CE2F2F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+button#valideFilter:hover{
+  background: #ff1818;
+  box-shadow: 0px 4px 4px rgb(255, 255, 255);
+}
+
+div#homePage{
+  position: absolute;
+  height: 50px;
+  left: 0px;
+  right: 0px;
+  top: 354px;
+
+  background: #FFFFFF;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div#resultHP{
+  position: absolute;
+  width: 220px;
+  height: 25px;
+  left: 10px;
+  top: 33px;
+
+  font-family: Oxanium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #404040;
+}
+
+div#nbDivPageHP{
+  position: absolute;
+  width: 79px;
+  height: 16px;
+  right: 0px;
+  top: 33px;
+}
+
+p#nbPageHP{
+  position: absolute;
+  left: 26.58%;
+  right: 26.58%;
+  top: 12.5%;
+  bottom: 6.25%;
+
+  font-family: Oxygen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+div#fontArt{
+  position: absolute;
+  height: 684px;
+  left: 12px;
+  right: 13px;
+  top: 416px;
+
+  background: #FFFFFF;
+  filter: blur(4px);
+}
+
+div.divArt{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+
+  position: absolute;
+  width: 383px;
+  height: 145px;
+}
+
+div.One{
+  top: 439px;
+}
+
+div.Two{
+  top: 625px;
+}
+
+div.Three{
+  top: 811px;
+}
+
+div.Left{
+  left: calc(50% - 383px/2 - 447.5px);
+}
+
+div.Center{
+  left: calc(50% - 383px/2 - 0.5px);
+}
+
+div.Right{
+  left: calc(50% - 383px/2 + 449.5px);
+}
+
+div.imgArt{
+  position: absolute;
+  height: 145px;
+  left: 0%;
+  right: 56.55%;
+  top: 0px;
+
+  background: url("/assets/annonce.jpg");
+  background-repeat: no-repeat;
+
+  background-position: top 0px left -20px;
+  background-size: cover;
+}
+
+div.divTxtArt{
+  position: absolute;
+  width: 197px;
+  height: 131px;
+  left: 181px;
+  top: 11px;
+}
+
+p.txtArt{
+  position: absolute;
+  font-family: Oxanium;
+  font-style: normal;
+  color: #000000;
+}
+
+p.titleArt{
+  left: 0%;
+  right: 11.68%;
+  top: 0%;
+  bottom: 87.02%;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+p.prixArt{
+  left: 31.98%;
+  right: 43.65%;
+  top: 23.66%;
+  bottom: 62.6%;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #CE2F2F;
+}
+
+p.kmArt{
+  left: 30.46%;
+  right: 42.13%;
+  top: 41.98%;
+  bottom: 48.09%;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+p.descArt{
+  left: 17.77%;
+  right: 30.46%;
+  top: 56.49%;
+  bottom: 23.66%;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+}
+
+p.dateArt{
+  left: 68.02%;
+  right: 3.55%;
+  top: 93.89%;
+  bottom: 0.76%;
+
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 7px;
+}
+
+
+
+
+p#nbDownPage{
+
+  position: absolute;
+  width: 214px;
+  height: 18px;
+  left: calc(50% - 214px/2 + 3px);
+  top: 1002px;
+
+  font-family: Oxanium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+nav#nbDown{
+  osition: absolute;
+  width: 214px;
+  height: 18px;
+  left: calc(50% - 214px/2 + 3px);
+  top: 1002px;
+
+  font-family: Oxanium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
