@@ -1,23 +1,17 @@
+import {Marque} from './marque.interface';
+import {Model} from './model.interface';
+
 export interface Annonce {
   id: number;
-  brand: any;
-  primeEco: boolean;
-  topOcass: boolean;
-  model: any;
-  modelComplement: string;
-  modelComplement2: string;
-  year: number;
-  kilometre: number;
-  fuel: string;
-  places: number;
-  typeOfVehicle: string;
-  gearbox: string;
-  carDoors: number;
+  title: string;
   description: string;
-  region: string;
+  year: number;
+  kilometrage: number;
   price: number;
-  photos: any;
-  date: Date;
-  garage: number;
-  user: number;
+  created_at: Date;
+  marque: Marque;
+  model: Model;
+  carburant: any;
+  garage: any;
+  user: any;
 }

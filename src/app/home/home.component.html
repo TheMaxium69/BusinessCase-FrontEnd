@@ -9,19 +9,19 @@
   <p id="titleFilter">Filtre de recherche</p>
   <select id="marqueSelect" class="selectFilter">
     <option class="optionFilter" value="">-Marque-</option>
-    <option class="optionFilter" value="Tyro">Tyrolium</option>
+    <option *ngFor="let marque of marques" class="optionFilter" value="Tyro">{{marque.name}}</option>
   </select>
   <select id="modeleSelect" class="selectFilter">
     <option class="optionFilter" value="">-Modèle-</option>
-    <option class="optionFilter" value="Tyro">Tyrolium</option>
+    <option *ngFor="let model of models" class="optionFilter" value="Tyro">{{model.name}}</option>
   </select>
   <select id="carburantSelect" class="selectFilter">
     <option class="optionFilter" value="">-Carburant-</option>
-    <option class="optionFilter" value="Tyro">Tyrolium</option>
+    <option *ngFor="let carburant of carburants" class="optionFilter" value="Tyro">{{carburant.name}}</option>
   </select>
   <div id="prixDiv" class="sideClass">
     <label for="customRange3" class="form-label">Prix :</label>
-    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+    <input type="range" class="form-range" min="0" max="500" step="1" id="customRange3">
   </div>
   <div id="kiloDiv" class="sideClass">
     <label for="customRange3" class="form-label">Kilométrage :</label>
@@ -34,15 +34,17 @@
   <button id="valideFilter">Validez les filtres</button>
 </div>
 
-<div id="fontArt"></div>
-<div class="divArt One Left" *ngFor="let annonce of annonces"><div class="imgArt"></div>
-  <div class="divTxtArt">
-    <p class="titleArt txtArt">{{annonce.model.name}}</p>
-    <p class="prixArt txtArt">3 680 €</p>
-    <p class="kmArt txtArt">188 260 km</p>
-    <p class="descArt txtArt">Description : <br>Voiture en bonne état</p>
-    <p class="dateArt txtArt">Septembre 2020</p>
-  </div>
+
+<div *ngFor="let annonce of annonces">
+  <p>{{annonce.description}}</p>
+  <p>{{annonce.year}}</p>
+  <p>{{annonce.kilometrage}}</p>
+  <p>{{annonce.price}}</p>
+  <p>{{annonce.marque.name}}</p>
+  <p>{{annonce.model.name}}</p>
+  <p>{{annonce.carburant.name}}</p>
+  <button (click)="show(annonce.id)">Show</button>
+  <button (click)="delete(annonce.id)">delete</button>
 </div>
 
 
