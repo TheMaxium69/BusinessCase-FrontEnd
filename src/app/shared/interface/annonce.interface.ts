@@ -1,5 +1,8 @@
 import {Marque} from './marque.interface';
 import {Model} from './model.interface';
+import {Carburant} from './carburant.interface';
+import {Garage} from './garage.interface';
+import {User} from './user.interface';
 
 export interface Annonce {
   id: number;
@@ -8,10 +11,10 @@ export interface Annonce {
   year: number;
   kilometrage: number;
   price: number;
-  created_at: Date;
+  createdAt: Date;
   marque: Marque;
   model: Model;
-  carburant: any;
-  garage: any;
-  user: any;
+  carburant: Carburant;
+  garage: Garage;
+  user: User;
 }

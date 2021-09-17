@@ -43,6 +43,7 @@
   <p>{{annonce.marque.name}}</p>
   <p>{{annonce.model.name}}</p>
   <p>{{annonce.carburant.name}}</p>
+  <p>{{annonce.user.createdAt | date:'dd-MM-yyyy hh:mm:ss a':'+0530' }}</p>
   <button (click)="show(annonce.id)">Show</button>
   <button (click)="delete(annonce.id)">delete</button>
 </div>

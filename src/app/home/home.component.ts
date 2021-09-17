@@ -6,6 +6,7 @@ import {Marque} from '../shared/interface/marque.interface';
 import {ModelService} from '../shared/service/model.service';
 import {CarburantService} from '../shared/service/carburant.service';
 import {Model} from '../shared/interface/model.interface';
+import {Carburant} from '../shared/interface/carburant.interface';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit {
   public annonce!: Annonce;
   public marques!: Marque[];
   public models!: Model[];
-  public carburants!: any;
+  public carburants!: Carburant[];
   public responce!: string;
 
   constructor(private modelService: ModelService, private carburantService: CarburantService,  private annonceService: AnnonceService, private marqueService: MarqueService) { }
